@@ -1,0 +1,24 @@
+.title {
+  color: #424242;
+  font-weight: 900;
+  opacity: 0.8;
+}
+.btnContainer {
+  text-align: center;
+  margin-top: 50px;
+}
+.btn {
+  color: #fff;
+  background-color: brown;
+  border: 1px solid brown;
+  padding: 10px 25px;
+  border-radius: 4px;
+  transition: all 200ms ease-in-out;
+}
+.btn:hover {
+  cursor: pointer;
+  color: brown;
+  background-color: antiquewhite;
+  padding: 10px 25px;
+  border-radius: 4px;
+}
