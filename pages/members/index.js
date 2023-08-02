@@ -24,7 +24,11 @@ const index = ({ members }) => {
         <h2>Members List</h2>
         <ul className={styles.list}>
           {members.map((member) => (
-            <Link className={styles.link} href={`/members/${member.id}`}>
+            <Link
+              key={member.id}
+              className={styles.link}
+              href={`/members/${member.id}`}
+            >
               <li key={member.id} className={styles.item}>
                 <h3>{member.name}</h3>
               </li>
