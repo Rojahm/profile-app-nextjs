@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Link from "next/link";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
@@ -11,14 +12,20 @@ const NotFound = () => {
     }, 3000);
   }, []);
   return (
-    <div className="not-found">
-      <h2>Ooops!</h2>
-      <h3>Page not Found</h3>
+    <>
+      <Head>
+        <title>Members | 404</title>
+        <meta name="keywords" content="members, list, page Not found" />
+      </Head>
+      <div className="not-found">
+        <h2>Ooops!</h2>
+        <h3>Page not Found</h3>
 
-      <p>
-        redirecting to... <Link href="/">Homepage</Link>
-      </p>
-    </div>
+        <p>
+          redirecting to... <Link href="/">Homepage</Link>
+        </p>
+      </div>
+    </>
   );
 };
 
