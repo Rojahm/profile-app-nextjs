@@ -4,12 +4,12 @@ const Navbar = () => {
   return (
     <div>
       <nav>
-        <div class="logo">
+        <div className="logo">
           <Link href="/">
             <h1>Member List</h1>
           </Link>
         </div>
-        <div class="nav">
+        <div className="nav">
           <Link href="/">Home</Link>
           <Link href="./about">About</Link>
           <Link href="/members">List</Link>
