@@ -2,7 +2,7 @@ import Link from "next/link";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
 
-const index = () => {
+const NotFound = () => {
   const router = useRouter();
   useEffect(() => {
     setTimeout(() => {
@@ -22,4 +22,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default NotFound;
